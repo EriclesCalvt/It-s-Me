@@ -1,0 +1,96 @@
+/*Universal selector*/
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* simple command*/
+    background-image: url(./assets/Dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;    
+    /*short command
+    background: url(./wp11604093.jpg) no-repeat center top/cover;
+    */
+}
+body *{
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+#container{
+    width: 360px;
+    margin: auto;  
+    padding: 24px;
+    margin-top: 56px
+}
+#profile img{
+    width: 150px;
+    border-radius: 80%;
+    display: block;
+    margin: auto;
+}
+#profile p{
+    margin-top: 8px;
+    font-weight: 500;
+    size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+/*Links*/
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0px;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 24px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    backdrop-filter: blur(15px);
+    text-decoration: none;
+    font-weight: 500;
+}
+/* pseudo-Selector*/
+ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
+
+    transition: all 0.2s;
+}
+#Socials-Links{
+    display: flex;
+    justify-content: center;
+
+    padding: 24px 0px;
+    font-size: 25px;
+
+}
+#Socials-Links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    transition: background 0.5s;
+    border-radius: 50%; 
+}
+#Socials-Links a:hover{
+    background-color: rgba(126, 126, 126, 0.959);
+}
+footer {
+    text-align: center;
+    font-size: 24px;
+    padding: 24px 0px;
+
+}
